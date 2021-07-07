@@ -1,288 +1,323 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin:0px;
+    padding:0px;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    border: px solid black;
 }
-h1{
-    text-align: center;
-    margin: 50px;
-    letter-spacing: 3px;
+body {
+   font-family: 'Montserrat', sans-serif;
+   color: gray;
 }
-
 .main{
-    width: 100%;
-    height: 80%;
-    display: flex;
-}
-
-.section-container{
-    
-    width: 50%;
-}
-form{
-    width: 35%;
-    margin-left: 15%;
-    height: 100%;
-}
-h3{
-    margin-left: 20px;
-    letter-spacing: 2px;
-    font-size: 1.8rem;
-}
-
-.mail{
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    position: relative;
-}
-.mail i{
-    position: absolute;
-    margin-top: 27px;
-    margin-left: 15px;
-    color: gray;
-}
-
-.mail #mail{
-    width: 85%;
-    height: 50px;
-    margin-top: 10px;
-    border-radius: 5px;      
-}
-
-.phone{
-    margin-left: 20px;
-    margin-top: 10px;
-    margin-bottom: 50px;
-    position: relative;
-}
-
-.phone i{
-    position: absolute;
-    margin-top: 27px;
-    margin-left: 15px;
-    color: gray;
-}
-.phone #phone{
-    width: 85%;
-    height: 50px;
-    margin-top: 10px;
-    border-radius: 5px;
-}
-
-.fullName{
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    position: relative;
-}
-.fullName i{
-    position: absolute;
-    margin-top: 27px;
-    margin-left: 15px;
-    color: gray;
-}
-.fullName #fullName{
-    width: 85%;
-    height: 50px;
-    margin-top: 10px;
-    border-radius: 5px;
-}
-
-.address{
-    margin-left: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    position: relative;
-}
-
-.address i{
-    position: absolute;
-    margin-top: 27px;
-    margin-left: 15px;
-    color: gray;
-}
-.address #address{
-    width: 85%;
-    height: 50px;
-    margin-top: 10px;
-    border-radius: 5px;
-}
-
-.city{
-    margin-left: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    position: relative;
-}
-
-.city i{
-    position: absolute;
-    margin-top: 27px;
-    margin-left: 15px;
-    color:gray
-}
-.city #city{
-    width: 85%;
-    height: 50px;
-    margin-top: 10px;
-    border-radius: 5px;
-}
-
-.country{
-    margin-left: 0;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    position: relative;
-}
-
-.country i{
-    position: absolute;
-    margin-top: 27px;
-    margin-left: 15px;
-    color: gray;
-}
-
-
-.country #country{
-    width: 150px;
-    height: 50px;
-    margin-top: 10px;
-    border-radius: 5px;
-}
-
-.postcode{
-    margin-left: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    position: relative;
-}
-
-.postcode i {
-    position: absolute;
-    margin-top: 25px;
-    margin-left: 15px;
-    color: gray;
-}
-.postcode #postcode{
-    width: 400px;
-    height: 50px;
-    margin-top: 10px;
-    border-radius: 5px;
-}
-.country_postcode{
-    margin-left: 20px;
-    margin-right: 100px;
-    display: flex;
-    justify-content: space-evenly
-}
-
-.info{
-    margin-left: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.submit{
-    display: flex;
-    justify-content: flex-end;
-    margin-left: 20px;
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
-
-.submit #button{
-    width: 160px;
-    height: 50px;
-    color: white;
-    background-color: #f2994a;
-    border-radius: 8px;
-    margin-right: 10px;
-    font-size: 1.5rem;
-    letter-spacing: 2px;
-    cursor: pointer;
-}
-
-.submit #button:hover{
-    background-color: #f77708
-}
-
-.background{
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    height: 85%;
-    background-color:#EEEEEE;
-    border-radius: 25px;
-}
-
-.first-image{
     display:flex;
+    justify-content: center;
+}
+form {
+    width: 50%;
+    margin-left: 6.5rem;
+}
+h1 {
+    color: black;
+    display: flex;
+    justify-content: center; 
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.left-container {
+   padding-top: 20px;
+   line-height: 30px;
+   font-size: large;
+}
+#email, #tel, #fname, #adress,
+#city {
+   width: 80%;
+   height: 30px;
+   padding-left: 40px;
+   border:1px solid gray;
+   border-radius: 5px;
+}
+.input-div {
+   position: relative;
+}
+.input-div i{
+   position:absolute;
+}
+i{   
+   margin-top:7px;
+   margin-left: 10px;
+}
+.div-header {
+   margin-top: 40px;
+   margin-bottom:20px;
+   color: black;
+}
+.postcode {
+   position: relative;
+}
+.postcode i{
+   position:absolute;
+   margin-top:10px;
+}
+.postcode, .country {
+   display: inline-block;
+   font-size: 0.8rem;
+   margin-top: 15px;
+}
+#postcode {
+   padding-left :40px;
+   width: 90%;
+}
+#country {
+   margin-right: 50px;
+   padding-left: 15px;
+   width: 10rem;
+}
+.country {
+   margin-left: 0;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   position: relative;
+}
+.country i {
+   position: absolute;
+   margin-top: 10px;
+   margin-left: 15px;
+   color: gray;
+}
+.country #country {
+   height: 30px;
+}
+#postcode {
+   height: 30px;
+}
+.info {
+   font-size: 0.8rem;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+.submit {
+   display:flex;
+   justify-content: flex-end;
+   margin-right: 8rem;
+}
+.submit #button {
+   width: 70px;
+   height: 40px;
+   font-size: 0.8rem;
+   border-radius: 5px;
+   background-color: chocolate;
+   color: white;
+   border: none;
+}
+.submit #button:hover{
+   background-color: #f77708
+}
+.background{
+   display: flex;
+   flex-direction: column;
+   width: 35rem;
+   height:45rem;
+   background-color:#EEEEEE;
+   border-radius: 25px;
+   margin-bottom: 3rem;
+}
+.first-image{
+   display:flex;
 }
 .image{
-    border-radius: 25px;
-    margin: 40px;
-    height: 13rem;
+   border-radius: 25px;
+   margin: 40px;
+   height: 13rem;
 }
-
 .product{
-    margin-top: 50px;
-    height: 11rem;
-    
+   margin-top: 50px;
+   height: 11rem;
 }
 .product h3{
-    margin-top: 1rem;
-    color:#4E515A
+   margin-top: 1rem;
+   color:#4E515A
 }
 .price{
-    margin-top: 1rem;
-    font-size: 2rem;
-    margin-left: 17px;
-    color:#F2994A
+   margin-top: 1rem;
+   font-size: 2rem;
+   margin-left: 17px;
+   color:#F2994A
 }
-
 .span{
-    color: gray;
-    font-size: 1.6rem
-    ;
+   color: gray;
+   font-size: 1.6rem
+   ;
 }
-
 .counter{
-    margin-top: 2.4rem;
-    margin-left: 17px;
+   margin-top: 2.4rem;
+   margin-left: 17px;
 }
 .counter #content{
-    width: 10rem;
-    height: 2.5rem;
-    font-size:2rem;
+   width: 10rem;
+   height: 2.5rem;
+   font-size:2rem;
 }
-
 .footer{
-    display: flex;
-    flex-direction: column;
-    margin-left: 40px;
-    margin-right: 70px;
+   display: flex;
+   flex-direction: column;
+   margin-left: 40px;
+   margin-right: 70px;
 }
-
 .first-line, .second-line{
-    display: flex;
-    justify-content: space-between;
-    font-size: 2rem;
-    border-top: 1px solid #bdbdbd;
-    color: black;
-    opacity: 0.8;
+   display: flex;
+   justify-content: space-between;
+   font-size: 2rem;
+   border-top: 1px solid #bdbdbd;
+   color: black;
+   opacity: 0.8;
 }
-
 .shipping{
+  letter-spacing: 0.3rem;
+}
+.total{
    letter-spacing: 0.3rem;
 }
-
-.total{
-    letter-spacing: 0.3rem;
+@media screen and (max-width: 800px) {
+   .background{
+       width: 20rem;
+       height:23rem;
+       border-radius: 10px;
+       margin-top: 55px;
+   }
+   .image{
+       border-radius: 10px;
+       margin: 20px;
+       height: 7rem;
+   }
+   .product{
+       margin-top: 20px;
+       height: 6rem;
+   }
+   .product h3{
+       margin-top: 0.5rem;
+       color:#4E515A
+   }
+   .price{
+       margin-top: 0.5rem;
+       font-size: 0.8rem;
+       margin-left: 8px;
+   }
+   .span{
+       color: gray;
+       font-size: 0.6rem
+       ;
+   }
+   .counter{
+       margin-top: 1.2rem;
+       margin-left: 8px;
+   }
+   .counter #content{
+       width: 5rem;
+       height: 1.3rem;
+       font-size:1rem;
+   }
+   .footer{
+       margin-left: 30px;
+       margin-right: 30px;
+   }
+   .first-line, .second-line{
+       font-size: 1rem;
+   }
+   .shipping{
+      letter-spacing: 0rem;
+   }
+   .total{
+       letter-spacing: 0rem;
+   }
 }
-
-
-
-
-
+@media screen and (max-width: 400px) {
+   .main{
+       display:flex;
+       flex-direction: column;
+   }
+   form {
+       order: 1;
+       margin-left: 2.5rem;
+   }
+   .left-container {
+       font-size: small;
+   }
+   #email, #tel, #fname, #adress,
+   #city, #postcode {
+       width: 16rem;
+   }
+   #country {
+       width: 16rem;
+       font-size: 2rem;
+   }
+   .country{
+       font-size: small;
+   }
+   .info {
+       font-size: 0.5rem;
+       margin-top: 20px;
+       margin-bottom: 20px;
+   }
+   .submit {
+       margin-left: 11rem;
+       margin-bottom: 4rem;
+   }
+   .submit #button {
+       width: 5rem;
+       padding:0rem 1rem;
+   }
+   .background{
+       width: 20rem;
+       height:23rem;
+       border-radius: 10px;
+       margin-top: 55px;
+       margin-left: 25px;
+       margin-right: 25px;
+   }
+   .image{
+       border-radius: 10px;
+       margin: 20px;
+       height: 7rem;
+   }
+   .product{
+       margin-top: 20px;
+       height: 6rem;
+   }
+   .product h3{
+       margin-top: 0.5rem;
+       color:#4E515A
+   }
+   .price{
+       margin-top: 0.5rem;
+       font-size: 0.8rem;
+       margin-left: 8px;
+       color:#F2994A
+   }
+   .span{
+       color: gray;
+       font-size: 0.6rem
+       ;
+   }
+   .counter{
+       margin-top: 1.2rem;
+       margin-left: 8px;
+   }
+   .counter #content{
+       width: 5rem;
+       height: 1.3rem;
+       font-size:1rem;
+   }
+   .footer{
+       margin-left: 30px;
+       margin-right: 30px;
+   }
+   .first-line, .second-line{
+       font-size: 1rem;
+   }
+   .shipping{
+      letter-spacing: 0rem;
+   }
+   .total{
+       letter-spacing: 0rem;
+   }
+}
