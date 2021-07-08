@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav{
+    display:flex;
+    background-color: black;
+    height: 5rem;
+    width: 100%;
+}
+
+.logo{
+    margin-left:15rem;
+    
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-around;  
+    width: 100%; 
+    font-size: 1.3rem; 
+    color: white;
+}
+
+.nav-list-left{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-list-right{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-list-left li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: medium;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.nav-list-right li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: medium;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+
+
+.search #search{
+    height: 100% ;
+    width: 100%;
+    position: relative;
+    font-size: medium;
+    background-color: black;
+}
+.search i{
+    position: absolute;
+    padding: 1.5rem;
+    margin-right: -3.8rem;
+    color: rgb(112, 101, 101)
+}
+
+.nav-list-left li:hover, .login:hover{
+    background-color: white;
+    color:rgb(80, 74, 74);
+}
+
+#search:hover{
+    background-color: white;
+    color:rgb(80, 74, 74);
+}
