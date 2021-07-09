@@ -133,7 +133,7 @@ main h3{
 
 .news1text h4{
     font-size: 1.4rem;
-    color:black
+    color:black;
 }
 
 .news1text p{
@@ -208,4 +208,88 @@ main h3{
 .news3text h4:hover,
 .news4text h4:hover{
     color:rgb(63, 63, 158);
+}
+
+.mainNewsFrame{
+    display: flex;
+    margin: 2rem 8rem;
+    height: 35rem;
+    border-top: 1px solid gray;
+    padding-top: 2rem;
+}
+
+.mainNews h2{
+    font-size: 3.5rem;
+    letter-spacing: 0.2rem;
+}
+
+.title li{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 2rem;
+    color: rgb(255, 73, 1);
+    font-size: 2rem;
+    list-style-type:square;
+}
+
+.mainNewsText{
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+
+.mainLink{
+    color: rgb(255, 73, 1);
+    font-size: 2rem;  
+}
+.mainNews p{
+    margin-top:3.5rem;
+    
+}
+
+.mainLink:link{
+    text-decoration: none;
+}
+
+.mainImage{
+    height: 100%;
+}
+
+.mainNews h2:hover{
+    color:rgb(63, 63, 158);
+    cursor: pointer;
+}
+
+.mainLink:hover{
+    color:black;
+    opacity: 0.8;
+}
+
+.flexNews{
+    margin:2rem 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: 1px solid gray;
+    border-bottom:1px solid gray;
+    padding: 1rem;
+}
+
+.flex1{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+}
+.images{
+    
+    width: 30rem;
+    height: 15rem;
+}
+.flexText{
+    width: 30rem;
+    height: 100%;
+    font-size: 2rem;
+    padding: 2.5rem;
+}
+.flex2{
+    margin-top: 1rem;
 }
