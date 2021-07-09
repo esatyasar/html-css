@@ -2,8 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid black;
     font-family: 'Montserrat', sans-serif;
+    /* border: 1px solid black; */
 }
 
 nav{
@@ -15,7 +15,6 @@ nav{
 
 .logo{
     margin-left:15rem;
-    
 }
 
 .nav-container{
@@ -86,4 +85,127 @@ nav{
 #search:hover{
     background-color: white;
     color:rgb(80, 74, 74);
+}
+
+/* main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.picture{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.picture p{
+    margin: 1rem;
+    font-size: large;
+    padding: 1rem;
+}
+
+main h3{
+    margin: 1rem 8rem;
+    border-bottom: 1px solid gray;
+    padding-bottom: 0.6rem;
+}
+
+.newsbar{
+    display: flex;
+    margin-left: 8em;
+    margin-right: 8rem;
+    cursor: pointer;
+}
+
+.news1{
+    display: flex;
+    height: 100%;
+}
+
+.news1text{
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.news1text h4{
+    font-size: 1.4rem;
+    color:black
+}
+
+.news1text p{
+    opacity: 0.8;
+}
+
+.news2{
+    display: flex;
+    height: 100%;
+}
+
+.news2text{
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.news2text h4{
+    font-size: 1.4rem;
+    color:black
+}
+
+.news2text p{
+    opacity: 0.8;
+}
+
+.news3{
+    display: flex;
+    height: 100%;
+}
+
+.news3text{
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.news3text h4{
+    font-size: 1.4rem;
+    color:black
+}
+
+.news3text p{
+    opacity: 0.8;
+}
+
+.news4{
+    display: flex;
+    height: 100%;
+}
+
+.news4text{
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.news4text h4{
+    font-size: 1.4rem;
+    color:black
+}
+
+.news4text p{
+    opacity: 0.8;
+}
+
+.news1text h4:hover,
+.news2text h4:hover,
+.news3text h4:hover,
+.news4text h4:hover{
+    color:rgb(63, 63, 158);
 }
