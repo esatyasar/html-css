@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,26 +6,27 @@
     /* border: 1px solid black; */
 }
 
-nav{
-    display:flex;
-    background-color: black;
+nav {
+    display: flex;
+    background-color: #1A1F24;
     height: 5rem;
     width: 100%;
 }
 
-.logo{
-    margin-left:15rem;
+.logo {
+    margin-left: 8rem;
+
 }
 
-.nav-container{
+.nav-container {
     display: flex;
-    justify-content: space-around;  
-    width: 100%; 
-    font-size: 1.3rem; 
+    justify-content: space-around;
+    width: 100%;
+    font-size: 1.3rem;
     color: white;
 }
 
-.nav-list-left{
+.nav-list-left {
     width: 50%;
     display: flex;
     justify-content: space-between;
@@ -33,7 +34,7 @@ nav{
     list-style: none;
 }
 
-.nav-list-right{
+.nav-list-right {
     width: 20%;
     display: flex;
     justify-content: space-around;
@@ -41,7 +42,7 @@ nav{
     list-style: none;
 }
 
-.nav-list-left li{
+.nav-list-left li {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,7 +52,7 @@ nav{
     cursor: pointer;
 }
 
-.nav-list-right li{
+.nav-list-right li {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,28 +64,30 @@ nav{
 
 
 
-.search #search{
-    height: 100% ;
+.search #search {
+    height: 100%;
     width: 100%;
     position: relative;
     font-size: medium;
     background-color: black;
 }
-.search i{
+
+.search i {
     position: absolute;
     padding: 1.5rem;
     margin-right: -3.8rem;
     color: rgb(112, 101, 101)
 }
 
-.nav-list-left li:hover, .login:hover{
+.nav-list-left li:hover,
+.login:hover {
     background-color: white;
-    color:rgb(80, 74, 74);
+    color: rgb(80, 74, 74);
 }
 
-#search:hover{
+#search:hover {
     background-color: white;
-    color:rgb(80, 74, 74);
+    color: rgb(80, 74, 74);
 }
 
 /* main{
@@ -93,124 +96,124 @@ nav{
     justify-content: center;
 } */
 
-.picture{
+.picture {
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.picture p{
+.picture p {
     margin: 1rem;
     font-size: large;
     padding: 1rem;
 }
 
-main h3{
+main h3 {
     margin: 1rem 8rem;
     border-bottom: 1px solid gray;
     padding-bottom: 0.6rem;
 }
 
-.newsbar{
+.newsbar {
     display: flex;
     margin-left: 8em;
     margin-right: 8rem;
     cursor: pointer;
 }
 
-.news1{
+.news1 {
     display: flex;
     height: 100%;
 }
 
-.news1text{
+.news1text {
     margin-left: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-.news1text h4{
+.news1text h4 {
     font-size: 1.4rem;
-    color:black;
+    color: black;
 }
 
-.news1text p{
+.news1text p {
     opacity: 0.8;
 }
 
-.news2{
+.news2 {
     display: flex;
     height: 100%;
 }
 
-.news2text{
+.news2text {
     margin-left: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-.news2text h4{
+.news2text h4 {
     font-size: 1.4rem;
-    color:black
+    color: black
 }
 
-.news2text p{
+.news2text p {
     opacity: 0.8;
 }
 
-.news3{
+.news3 {
     display: flex;
     height: 100%;
 }
 
-.news3text{
+.news3text {
     margin-left: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-.news3text h4{
+.news3text h4 {
     font-size: 1.4rem;
-    color:black
+    color: black
 }
 
-.news3text p{
+.news3text p {
     opacity: 0.8;
 }
 
-.news4{
+.news4 {
     display: flex;
     height: 100%;
 }
 
-.news4text{
+.news4text {
     margin-left: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-.news4text h4{
+.news4text h4 {
     font-size: 1.4rem;
-    color:black
+    color: black
 }
 
-.news4text p{
+.news4text p {
     opacity: 0.8;
 }
 
 .news1text h4:hover,
 .news2text h4:hover,
 .news3text h4:hover,
-.news4text h4:hover{
-    color:rgb(63, 63, 158);
+.news4text h4:hover {
+    color: rgb(63, 63, 158);
 }
 
-.mainNewsFrame{
+.mainNewsFrame {
     display: flex;
     margin: 2rem 8rem;
     height: 35rem;
@@ -218,78 +221,379 @@ main h3{
     padding-top: 2rem;
 }
 
-.mainNews h2{
+.mainNews h2 {
     font-size: 3.5rem;
     letter-spacing: 0.2rem;
 }
 
-.title li{
+.title li {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     margin-left: 2rem;
     color: rgb(255, 73, 1);
     font-size: 2rem;
-    list-style-type:square;
+    list-style-type: square;
 }
 
-.mainNewsText{
+.mainNewsText {
     font-size: 1.5rem;
     opacity: 0.8;
 }
 
-.mainLink{
+.mainLink {
     color: rgb(255, 73, 1);
-    font-size: 2rem;  
-}
-.mainNews p{
-    margin-top:3.5rem;
-    
+    font-size: 2rem;
 }
 
-.mainLink:link{
+.mainNews p {
+    margin-top: 3.5rem;
+
+}
+
+.mainLink:link {
     text-decoration: none;
 }
 
-.mainImage{
+.mainImage {
     height: 100%;
 }
 
-.mainNews h2:hover{
-    color:rgb(63, 63, 158);
+.mainNews h2:hover {
+    color: rgb(63, 63, 158);
     cursor: pointer;
 }
 
-.mainLink:hover{
-    color:black;
+.mainLink:hover {
+    color: black;
     opacity: 0.8;
 }
 
-.flexNews{
-    margin:2rem 8rem;
+.flexNews {
+    margin: 2rem 8rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     border-top: 1px solid gray;
-    border-bottom:1px solid gray;
+    border-bottom: 1px solid gray;
     padding: 1rem;
 }
 
-.flex1{
+.flex1 {
     display: flex;
     flex-direction: column;
     border: 1px solid gray;
 }
-.images{
-    
+
+.images {
+
     width: 30rem;
     height: 15rem;
 }
-.flexText{
+
+.flexText {
     width: 30rem;
     height: 100%;
     font-size: 2rem;
     padding: 2.5rem;
 }
-.flex2{
+
+.flex2 {
     margin-top: 1rem;
+}
+
+footer {
+    background-color: #1A1F24;
+    height: 30rem;
+    color: white;
+    font-size: 1.3rem;
+
+}
+
+.footerLogo {
+    margin-left: 8rem;
+    margin-right: 8rem;
+    padding: 2rem;
+    border-bottom: 1px solid white;
+}
+
+.footerText {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 8rem;
+    margin-left: 8rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+
+.footerText li {
+    list-style: none;
+}
+
+.copyRight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width:400px) {
+
+    * {
+        border: 1px solid black;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .picture {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .picture1 {
+        margin-left: 35rem;
+        width: 30rem;
+    }
+
+    .picture p {
+        width: 100%;
+        margin-left: 35rem;
+        margin: 1rem;
+        font-size: large;
+        padding: 1rem;
+    }
+
+    main h3 {
+        margin: 1rem 8rem;
+        border-bottom: 1px solid gray;
+        padding-bottom: 0.6rem;
+    }
+
+    .newsbar {
+        display: flex;
+        margin-left: 8em;
+        margin-right: 8rem;
+        cursor: pointer;
+    }
+
+    .news1 {
+        display: flex;
+        height: 100%;
+    }
+
+    .news1text {
+        margin-left: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .news1text h4 {
+        font-size: 1.4rem;
+        color: black;
+    }
+
+    .news1text p {
+        opacity: 0.8;
+    }
+
+    .news2 {
+        display: flex;
+        height: 100%;
+    }
+
+    .news2text {
+        margin-left: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .news2text h4 {
+        font-size: 1.4rem;
+        color: black
+    }
+
+    .news2text p {
+        opacity: 0.8;
+    }
+
+    .news3 {
+        display: flex;
+        height: 100%;
+    }
+
+    .news3text {
+        margin-left: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .news3text h4 {
+        font-size: 1.4rem;
+        color: black
+    }
+
+    .news3text p {
+        opacity: 0.8;
+    }
+
+    .news4 {
+        display: flex;
+        height: 100%;
+    }
+
+    .news4text {
+        margin-left: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .news4text h4 {
+        font-size: 1.4rem;
+        color: black
+    }
+
+    .news4text p {
+        opacity: 0.8;
+    }
+
+    .news1text h4:hover,
+    .news2text h4:hover,
+    .news3text h4:hover,
+    .news4text h4:hover {
+        color: rgb(63, 63, 158);
+    }
+
+    .mainNewsFrame {
+        display: flex;
+        margin: 2rem 8rem;
+        height: 35rem;
+        border-top: 1px solid gray;
+        padding-top: 2rem;
+    }
+
+    .mainNews h2 {
+        font-size: 3.5rem;
+        letter-spacing: 0.2rem;
+    }
+
+    .title li {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        margin-left: 2rem;
+        color: rgb(255, 73, 1);
+        font-size: 2rem;
+        list-style-type: square;
+    }
+
+    .mainNewsText {
+        font-size: 1.5rem;
+        opacity: 0.8;
+    }
+
+    .mainLink {
+        color: rgb(255, 73, 1);
+        font-size: 2rem;
+    }
+
+    .mainNews p {
+        margin-top: 3.5rem;
+
+    }
+
+    .mainLink:link {
+        text-decoration: none;
+    }
+
+    .mainImage {
+        height: 100%;
+    }
+
+    .mainNews h2:hover {
+        color: rgb(63, 63, 158);
+        cursor: pointer;
+    }
+
+    .mainLink:hover {
+        color: black;
+        opacity: 0.8;
+    }
+
+    .flexNews {
+        margin: 2rem 8rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+        padding: 1rem;
+    }
+
+    .flex1 {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid gray;
+    }
+
+    .images {
+
+        width: 30rem;
+        height: 15rem;
+    }
+
+    .flexText {
+        width: 30rem;
+        height: 100%;
+        font-size: 2rem;
+        padding: 2.5rem;
+    }
+
+    .flex2 {
+        margin-top: 1rem;
+    }
+
+    footer {
+        background-color: #1A1F24;
+        height: 30rem;
+        color: white;
+        font-size: 1.3rem;
+
+    }
+
+    .footerLogo {
+        margin-left: 8rem;
+        margin-right: 8rem;
+        padding: 2rem;
+        border-bottom: 1px solid white;
+    }
+
+    .footerText {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        margin-right: 8rem;
+        margin-left: 8rem;
+        padding-bottom: 2rem;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid white;
+        cursor: pointer;
+    }
+
+    .footerText li {
+        list-style: none;
+    }
+
+    .copyRight {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
