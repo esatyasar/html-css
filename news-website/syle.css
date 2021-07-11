@@ -6,6 +6,12 @@
     /* border: 1px solid black; */
 }
 
+body{
+    width: 148rem;
+}
+main{
+    width: 100%;
+}
 nav {
     display: flex;
     background-color: #1A1F24;
@@ -276,12 +282,14 @@ main h3 {
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
     padding: 1rem;
+    
 }
 
 .flex1 {
     display: flex;
     flex-direction: column;
     border: 1px solid gray;
+    cursor: pointer;
 }
 
 .images {
@@ -338,11 +346,15 @@ footer {
     align-items: center;
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width: 414px) {
 
     * {
         border: 1px solid black;
     }
+
+    body{
+        font-size: 0.86rem
+    };
 
     nav {
         display: none;
