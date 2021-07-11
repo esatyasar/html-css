@@ -423,4 +423,16 @@ li{
 body{
     margin-right: 14%;
 }
+.content12,
+.content13,
+.content15,
+.content16,
+.content17,
+.content24,
+.content35,
+.content42,
+.content47,
+.content53{
+    font-size: 0.6rem;
+}
 }
