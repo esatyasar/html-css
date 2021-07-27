@@ -9,6 +9,7 @@ const content4 = document.querySelector(".content4")
 var counter = 0;
 
 nextbtn.addEventListener("click", () => {
+    prevbtn.classList.add("prevActive")
     counter++;
     if(counter ===1){
         progress.setAttribute("style", "width : 25%; backgroundColor:var(--line-border-fill)")
@@ -20,6 +21,7 @@ nextbtn.addEventListener("click", () => {
     }else if(counter === 3){
         progress.setAttribute("style", "width : 100%; backgroundColor:var(--line-border-fill)")
         content4.classList.add("active");
+        nextbtn.classList.add("disabled")
     }
     else {
         counter--;
@@ -27,6 +29,7 @@ nextbtn.addEventListener("click", () => {
 })
 
 prevbtn.addEventListener("click",() => {
+    nextbtn.classList.remove("disabled")
     counter--;
     if(counter === 2){
         progress.setAttribute("style", "width : 60%; backgroundColor:var(--line-border-fill)")
@@ -37,6 +40,7 @@ prevbtn.addEventListener("click",() => {
     }else if(counter === 0){
         progress.setAttribute("style", "width : 0%; backgroundColor:var(--line-border-fill)")
         content2.classList.remove("active")
+        prevbtn.classList.remove("prevActive")
     }else{
         counter++;
     }

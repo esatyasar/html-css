@@ -43,9 +43,10 @@ h1{
     font-size: 2em;
     border-radius: 10px;
     color: white;
-    background-color: tomato;
+    background-color: var(--line-border-empty);
     outline: none;
     border: none;
+    cursor: pointer;
 }
 .btnnext{
     width: 40%;
@@ -56,13 +57,14 @@ h1{
     background-color: var(--line-border-fill);
     outline: none;
     border: none;
+    cursor: pointer;
 }
-.btnprev:hover{
+/* .btnprev:hover{
     background-color: rgb(252, 40, 2);
 }
 .btnnext:hover{
     background-color: rgb(136, 255, 0);
-}
+} */
 .content1,
 .content2,
 .content3,
@@ -73,6 +75,7 @@ h1{
     background-color: var(--line-border-empty);
     color: white;
     text-align: center;
+    
 }
 .active{
     background-color: var(--line-border-fill);
@@ -101,4 +104,11 @@ h1{
     z-index: -1;
     transition: 1s ease;
     
+}
+.disabled{
+    background-color: var(--line-border-empty);
+}
+
+.prevActive{
+    background-color: tomato;
 }
