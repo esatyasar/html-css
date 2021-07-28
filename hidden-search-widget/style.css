@@ -20,6 +20,7 @@ body{
     width: 20%;
     margin: auto;
     font-size: 2rem;
+    min-width: 400px;
 }
 
 a{
@@ -38,6 +39,7 @@ a{
 }
 
 .input{
+    min-width:400px;
     width: 30rem;
     height: 5rem;
     border-radius: 5px;
