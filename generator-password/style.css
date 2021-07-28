@@ -32,16 +32,18 @@ body{
     justify-content: space-around;
     background-color: rebeccapurple;
 }
-.box, .lenght{
+.box, .length{
     margin-top: 1rem;
     display: flex;
     justify-content: space-between;
     padding-left: 1rem;
     padding-right: 1rem;
 }
-#lenght{
+#length{
     width: 20%;
     text-align: center;
+    height: 2rem;
+    font-size: 1.2em;
 }
 .submit{
     width: 90%;
@@ -71,5 +73,6 @@ body{
 }
 #password{
     width: 100%;
-    
+    margin-top:1rem;
+    text-align: center;
 }
