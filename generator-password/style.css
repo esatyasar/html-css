@@ -55,7 +55,13 @@ body{
     font-size: 1.5em;
     background-color: #ecb602;
     color: rgb(46, 12, 80);
+    cursor: pointer;
 }
+.generator:hover{
+    background-color:rgb(46, 12, 80);
+    color: #ecb602;
+}
+
 .password{
     width: 90%;
     margin: auto;
