@@ -59,22 +59,6 @@
         &:hover{
             color:$lime;
             transition: all 0.3s ease;
-        }
+       }   }
     }
     }
-    #button{
-        border: none;
-        outline: none;
-        border-radius: 5px;
-        padding: 12px 24px;
-        background-color: $lime;
-        margin-left: 1rem;
-        color: $light;
-
-        &:hover{
-            background-color: $orangeRed;
-            transition: all 0.3s ease;
-        }
-    }
-
-}

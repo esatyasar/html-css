@@ -5,3 +5,112 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+
+// Main Section Css
+
+.main{
+    background-color: $light;
+    
+    &__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        margin: 0 auto;
+        height: 90vh;
+        z-index: 1;
+        width: 100%;
+        max-width: 1200px;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+
+        @include tablet {
+            grid-template-columns: 1fr;
+            height: 100%;
+        }
+    
+    &--left{
+        width: 100%;
+        line-height: 1.2;
+
+        @include tablet{
+            padding: 5rem 0;
+        }
+        @include mobile{
+            line-height: 1.5;
+        }
+    }
+
+    &--left h1{
+        font-size: 4em;
+        color:$lime;
+
+        @include mobile{
+            font-size: 1.5em;
+        }
+    }
+
+    &--left h2{
+        color: $dark;
+        font-size: 4em;
+
+        @include mobile{
+            font-size: 1.5em;
+        }
+    }
+
+    &--left p{
+        color: $dark;
+        font-size: 2em;
+        margin-top: 1rem;
+        font-weight: 700;
+
+        @include mobile{
+            font-size: 1.5em;
+        }
+    }
+
+    &--btn{
+        font-size: 1em;
+        background-color: $lime;
+        padding: 14px 32px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        color: $light;
+        margin-top: 2rem;
+        position: relative;
+        transition: all 0.3s;
+    }
+    &--btn a{
+        position: relative;
+        z-index: 2;
+        color: $light;
+        text-decoration: none;
+    }
+    &--btn:after{
+        position:absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: $orangeRed;
+        transition: all 0.3s;
+        border-radius: 5px;
+    }
+    &--btn:hover:after{
+        width: 100%;
+    }
+    &--right{
+        text-align: center;
+    }
+    &--img{
+        
+        height: 100%;
+        width: 100%;
+    }
+}}
+
+
