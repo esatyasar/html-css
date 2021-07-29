@@ -71,6 +71,22 @@
   transition: all 0.3s ease;
 }
 
+.navbar__menu #button {
+  padding: 12px 24px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #00cc66;
+  margin-left: 16px;
+  color: #f7f7f7;
+}
+
+.navbar__menu #button:hover {
+  background-color: #fb4b4e;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
 * {
   margin: 0;
   padding: 0;
