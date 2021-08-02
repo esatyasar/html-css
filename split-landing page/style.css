@@ -1,100 +1,166 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     /* border: 1px solid black; */
     font-family: 'Nunito Sans', sans-serif;
 }
-html{
+
+html {
     height: 100vh;
-}
-body{
-    height: 100%;
     font-size: 16px;
-    
 }
 
-.main-container{
+body {
+    height: 100%;
+
+
+}
+
+.main-container {
     width: 100%;
     margin: 0;
     display: flex;
     height: 100%;
+
 }
 
-.ps{
+.ps {
     width: 50%;
     margin: auto;
     height: 100%;
     background-image: url(./img/ps.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    
+    transition: all 1s ease-in-out;
+    transition-delay: 0.3s;
 }
-.ps-content{
+
+.ps-content {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items:center;
+    align-items: center;
     height: 100%;
     width: 100%;
     background-color: rgba(87, 84, 236, 0.7)
 }
-.ps-title{
+
+.ps-title {
     color: white;
     font-size: 3rem;
-    margin-top:11rem;
+    margin-top: 11rem;
 }
-.ps-btn{
+
+.ps-btn {
     margin-top: 4rem;
     width: 20%;
     height: 5%;
     border: 1px solid white;
-    background:none;
+    background: none;
     color: white;
     cursor: pointer;
 }
 
-.ps-btn:hover{
-    font-size: 1.1rem;
-    border:none;
-    background-color: #5754ec
+.ps-btn:hover {
+    border: none;
+    background-color: #5754ec;
 }
-.xbox{
+
+.xbox {
     width: 50%;
     height: 100%;
     margin: auto;
     background-image: url(./img/xbox.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position:center;
+    background-position: left;
+    transition: all 1s ease-in-out;
+    transition-delay: 0.3s;
 }
 
-.xbox-content{
+.xbox-content {
     display: flex;
     flex-direction: column;
-    justify-content:start;
+    justify-content: start;
     align-items: center;
     height: 100%;
     width: 100%;
-    background-color:rgba(43, 43, 43, 0.8);
+    background-color: rgba(43, 43, 43, 0.8);
 }
-.xbox-title{
+
+.xbox-title {
     color: white;
     font-size: 3rem;
-    margin-top:11rem;
+    margin-top: 11rem;
 }
-.xbox-btn{
+
+.xbox-btn {
     margin-top: 4rem;
     width: 20%;
     height: 5%;
     border: 1px solid white;
-    background:none;
+    background: none;
     color: white;
     cursor: pointer;
 }
 
-.xbox-btn:hover{
-    font-size: 1.1rem;
-    border:none;
-    background-color: #1c7a1c
+.xbox-btn:hover {
+    border: none;
+    background-color: #1c7a1c;
+}
+
+
+.active {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 150%;
+}
+
+.passive {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+@media screen and (max-width:720px) {
+    html {
+        font-size: 14px;
+    }
+
+    .xbox-btn {
+        width: 30%;
+    }
+
+    .ps-btn {
+        width: 30%;
+    }
+    .ps-title,
+    .xbox-title{
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width:500px){
+    html{
+        font-size: 10px;
+    }
+    .xbox-btn {
+        width: 40%;
+    }
+
+    .ps-btn {
+        width: 40%;
+    }
+}
+@media screen and (max-width:330px){
+    html{
+        font-size: 7px;
+    }
+    .xbox-btn {
+        font-size: 1rem;
+    }
+
+    .ps-btn {
+        font-size: 1rem;
+    }
 }
