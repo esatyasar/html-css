@@ -1,0 +1,64 @@
+* {
+  /* border: 1px solid black; */
+}
+
+.logo {
+  color: #1DA1F2;
+  padding: 1rem;
+}
+
+.fab {
+  font-size: 2rem;
+}
+
+.mainPage {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.stars {
+  padding: 1rem;
+  margin-right: 2rem;
+  margin-top: 0.2rem;
+}
+
+.searchBar {
+  position: relative;
+  border: 1px;
+  background-color: #eff3f4;
+  border-radius: 50px;
+  margin-top: 0.5rem;
+  height: 3rem;
+  margin-left: 0rem;
+  width: 14rem;
+}
+
+.search {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  position: absolute;
+  left: 3rem;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+.fas {
+  top: 1.1rem;
+  left: 1rem;
+  position: absolute;
+  margin: auto;
+  color: gray;
+}
+
+.searchBar:hover {
+  background-color: white;
+  border: 1px solid #1DA1F2;
+}
+
+.searchBar:hover i {
+  color: #1DA1F2;
+}
+/*# sourceMappingURL=style.css.map */

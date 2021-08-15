@@ -1,0 +1,67 @@
+$twitter-color : #1DA1F2;
+$background-color :#eff3f4;
+
+*{
+    /* border: 1px solid black; */
+}
+@mixin padding {
+    padding: 1rem;
+   
+}
+
+.logo{
+    color:$twitter-color;
+    @include padding;
+    
+}
+.fab{
+    font-size: 2rem
+}
+.mainPage{
+    @include padding;
+    font-size: 1.5rem
+    
+}
+.stars{
+    @include padding;
+    margin-right: 2rem;
+    margin-top: 0.2rem;
+}
+.searchBar{
+    position: relative;
+    border: 1px;
+    background-color:$background-color;
+    border-radius: 50px;
+    margin-top: 0.5rem;
+    height: 3rem;
+    margin-left: 0rem;
+    width: 14rem;
+}
+.search{
+    width: 80%;
+    height: 100%;
+    margin:auto;
+    position: absolute;
+    left: 3rem;
+    border: none;
+    outline: none;
+    background:none;
+    cursor: pointer;
+}
+
+.fas{
+    top: 1.1rem;
+    left: 1rem;
+    position: absolute;
+    margin:auto;
+    color:gray;
+}
+.searchBar:hover{
+   
+    background-color: white;
+    border: 1px solid $twitter-color;
+    
+    & i{
+        color: $twitter-color;
+    }
+}
