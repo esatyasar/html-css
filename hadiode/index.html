@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,23 +12,18 @@
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>HadiOde</title>
-
 </head>
-
 <body>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-md">
         <div class="container-md navbar-container">
             <div class="navbar-title">
                 <a class="navbar-brand ms-5 fs-2 text-primary fw-bold" href="./index.html">HadiOde</a>
-
             </div>
-            <!-- toggle button for mobile nav -->
             <button class="navbar-toggler justify-content-center" type="button" data-bs-toggle="collapse"
                 data-bs-target="#main-nav" aria-controls="main-nav" aria-expended="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span> </button>
-
-            <!-- navbar links -->
             <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
                 <ul class="navbar-nav navbar-items">
                     <li class="nav-item ">
@@ -52,102 +46,102 @@
             </div>
         </div>
     </nav>
-
-    <main class="row container-fluid w-100 ms-5">
-        <div class="col-2 d-flex flex-column justify-content-md-between" style="height: 120vh;">
-            <div >
+    <main scroll="no" class="row container-fluid w-100 ms-5">
+        <!-- Sidebar -->
+        <div class="col-2 d-flex flex-column justify-content-md-between" style="height: 80vh;">
+            <div>
                 <div class='d-flex align-items-center mb-4 mt-5 border-bottom'>
                     <i class="far fa-calendar-alt fa-lg text-primary"></i>
                     <p class='fs-4 my-auto ms-3 text-primary'>Dashboard</p>
                 </div>
                 <div class='d-flex align-items-center mb-4 border-bottom'>
                     <i class="fas fa-user text-muted fa-lg"></i>
-                    <p class='fs-4 my-auto ms-3 text-muted' >Profile</p>
+                    <p class='fs-4 my-auto ms-3 text-muted'>Profile</p>
                 </div>
                 <div class='d-flex align-items-center mb-4 border-bottom'>
                     <i class="fas fa-coins text-muted fa-lg"></i>
-                    <p class='fs-4 my-auto ms-3 text-muted' >Trade</p>
+                    <p class='fs-4 my-auto ms-3 text-muted'>Trade</p>
                 </div>
                 <div class='d-flex align-items-center mb-4 border-bottom'>
                     <i class="fas fa-file-signature text-muted fa-lg"></i>
-                    <p class='fs-4 my-auto ms-3 text-muted' >Contract</p>
+                    <p class='fs-4 my-auto ms-3 text-muted'>Contract</p>
                 </div>
             </div>
             <div>
-                <div class ="border-top mb-5 d-flex flex-column align-items-center">
+                <div class="border-top mb-5 d-flex flex-column align-items-center">
                     <i class="far fa-user fa-2x mt-3 rounded-circle bg-secondary p-3 mb-3"></i>
-                    <div class =" d-flex flex-column mx-auto">
-                        <button class ="buttons bg-primary text-light border-0 rounded mb-3">Send Message</button>
-                        <button class ="buttons bg-primary text-light border-0 rounded mb-3">Send Email</button>
+                    <div class=" d-flex flex-column mx-auto">
+                        <button class="buttons bg-primary text-light border-0 rounded mb-3">Send Message</button>
+                        <button class="buttons bg-primary text-light border-0 rounded mb-3">Send Email</button>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
-        <section class="col-10 bg-light mt-2">
-            <h2 >Dashboard</h2>
-            <div class="d-flex justify-content-around">
-                <div class="card" style="width: 27rem; height:18rem;">
-                    <img class="card-img-top" src="./assets/image1.jpg" alt="pay_image">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
+        <!-- Dashboard -->
+        <section class="col-10 mt-2">
+            <div class="d-flex align-items-center justify-content-around mt-3">
+                <div class="card border-primary mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body text-primary">
+                      <h5 class="card-title">Primary card title</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
-                  </div>
-                  <div class="card" style="width: 27rem; height:18rem">
-                    <img class="card-img-top" src="./assets/image1.jpg" alt="pay_image">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
+                </div>
+                <div class="card border-primary mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body text-primary">
+                      <h5 class="card-title">Primary card title</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
-                  </div>
+                </div>
+                <div class="card border-primary mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body text-primary">
+                      <h5 class="card-title">Primary card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="mt-3">
+                <p class="section-text">Lorem ipsum dolor sit amet consectetur <mark style='color:rgb(19, 0, 128);'>Pricing</mark> adipisicing elit. Vitae veritatis ullam ea harum
+                    necessitatibus repellat explicabo, <mark style='color:green;'>Profit</mark>, ad?</p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto?</li>
+                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                </ul>
+            </div>
+
+            <div class="d-flex justify-content-around mt-5 mb-5">
+                <div  style="width: 24rem; height:18rem;">
+                    <img class="card-img-top rounded" src="./assets/image1.jpg" alt="pay_image">
+                    <div class="card-body">
+                        <h5 class="card-title">Pay with HadiOde</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+                <div style="width: 24rem; height:18rem;">
+                    <img class="card-img-top rounded" src="./assets/image3.jpeg" alt="pay_image">
+                    <div class="card-body">
+                        <h5 class="card-title">Pay with Credit Card</h5>
+                        <p class="card-text">Some quick example text to build on the card title</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-    <!-- <div class = 'col-2 container-fluid'>
-        <div class='col-12 mt-5 d-flex flex-column justify-content-md-between h-100 w-100'>
-            <div class="ms-4">
-                <div >
-                    <div class='d-flex align-items-center mb-3 border-bottom '> 
-                        <i class="far fa-calendar-alt fa-lg"></i>
-                        <p class='fs-4 my-auto ms-3 text-dark'>Dashboard</p>
-                    </div>
-                    <div class='d-flex align-items-center mb-3 border-bottom'>
-                        <i class="fas fa-user text-muted fa-lg"></i>
-                        <p class='fs-4 my-auto ms-3 text-muted' >Personel</p>
-                    </div>
-                </div>
-                <h5 class = "p-2 text-muted"> Şirket</h5>
-                <div>
-                    <div class='d-flex align-items-center mb-3 border-bottom'>
-                        <i class="fas fa-users text-muted fa-lg"></i>
-                        <p class='fs-4 my-auto ms-3 text-muted'>Takım</p>
-                    </div>
-                    <div class='d-flex align-items-center mb-3 border-bottom'>
-                        <i class="fas fa-circle text-info text-muted fa-lg " />
-                        <p class='fs-4 my-auto ms-3 text-muted' >Ayarlar</p>
-                    </div>
-                </div>
-            </div>
-            <div >
-                <div class ="border-top d-flex flex-column align-items-center">
-                    <i class="far fa-user fa-2x mt-3 rounded-circle bg-secondary p-3 mb-3"></i>
-                    <small class ="mb-3 mx-auto">Müşteri Temsilcisine Bağlan</small>
-                    <div class =" d-flex flex-column mx-auto">
-                        <button class ="bg-info text-light border-0 rounded mb-3">Anlık Mesajlaş</button>
-                        <button class ="bg-info text-light border-0 rounded mb-3">Email Gönder</button>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <section>
-
-    </section>
-    <footer>
-
+    <!-- Footer -->
+    <footer class="d-flex align-items-center justify-content-center mt-5" style='height:4rem'>
+        <i class="fab fa-cc-visa ms-2 fa-2x"></i>
+        <i class="fab fa-cc-mastercard ms-2 fa-2x"></i>
+        <i class="fab fa-cc-paypal ms-2 fa-2x"></i>
+        <i class="fab fa-cc-amex ms-2 fa-2x"></i>
     </footer>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>

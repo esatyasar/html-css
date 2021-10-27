@@ -1,10 +1,6 @@
-*{
-    border: 1px solid black; 
-   
-}
 body{
     font-size: 16px;
-    
+    max-width: 200vh;
 }
 .navbar{
     font-size: 1.5rem;
@@ -15,3 +11,8 @@ body{
     margin-right: 3rem;
     text-decoration: none;
 }
+.section-text{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
