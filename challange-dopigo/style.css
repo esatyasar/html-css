@@ -2,7 +2,10 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    /* border: 1px solid black ; */
+    border: 1px solid black ;
+}
+html{
+    font-size: 16px;
 }
 /* SingIn Page's Styles */
 .mainSignIn{
@@ -34,7 +37,8 @@
 }
 .form-label,
 .form-check-label,
-.signUp{
+.signUp,
+.country{
     cursor: pointer;
 }
 .formBottom{
@@ -49,6 +53,129 @@
 .signUpContainer{
     margin-top: 6rem;
     display: flex;
-    height: 80vh;
+    height: 90vh;
     width: 100%;
+}
+.signUpForm{
+    margin: 0rem 3rem;
+}
+.leftSection{
+    padding-top: 7rem;
+    margin-right: 12rem;
+    height: 100%;
+}
+.title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.desc{
+    color: gray;
+    letter-spacing: 1px;
+}
+.accountBtn{
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#0D6EFD ;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+button{
+    letter-spacing: 1px;
+}
+.signUpFormContainer{
+    border: 1px solid white;
+    border-radius: 5px;   
+    box-shadow:3px 3px 3px 3px rgb(214, 214, 214);
+}
+
+/* Responsive Settings */
+
+@media screen and (max-width:1500px) {
+    .signInContainer{
+        width: 35%;
+    }
+}
+@media screen and (max-width:1300px) {
+    .signInContainer{
+        width: 40%;
+    }
+}
+@media screen and (max-width:1120px) {
+    .signInContainer{
+        width: 45%;
+        height: 45%;
+    }
+    html{
+        font-size: 0.95rem;
+    }
+}
+@media screen and (max-width:920px) {
+    .signInContainer{
+        width: 50%;
+    }
+}
+@media screen and (max-width:760px) {
+    .signInContainer{
+        width: 55%;
+    }
+    html{
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width:576px) {
+    .signInContainer{
+        width: 70%;
+        height: 50%;
+    }
+    .signInForm{
+        margin: 2rem 0.5rem 3rem 0.5rem
+    }
+    .formBottom{
+        margin-top: 8rem;
+    }
+} 
+@media screen and (max-width:450px) {
+    .signInContainer{
+        width: 90%;
+        height: 60%;
+    }
+    html{
+        font-size: 0.85rem;
+    }
+  .signInForm{
+        margin-bottom:2rem;
+    } 
+    .formBottom{
+        margin-top: 10rem;
+    }
+    .forgotPassword{
+        display: flex;
+        justify-content: flex-end;
+        font-size: 0.8rem;
+    }
+    #email,
+    #Password,
+    .signInBtntn{
+        width: 100%;
+    }
+
+} 
+
+/* signUp Page Responsive */
+@media screen and (max-width:660px) {
+    .signUpContainer{
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height:100%
+    } 
+ 
 }
