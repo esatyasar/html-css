@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid black ; */
+}
+/* SingIn Page's Styles */
+.mainSignIn{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.signInContainer{
+    border: 1px solid white;
+    border-radius: 5px;   
+    box-shadow:3px 3px 3px 3px rgb(214, 214, 214);
+    width: 30%;
+    height: 50%;
+}
+.signInForm{
+    margin: 3rem 3rem 5rem 3rem;
+}
+.continueBtn{
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#0D6EFD ;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.form-label,
+.form-check-label,
+.signUp{
+    cursor: pointer;
+}
+.formBottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 12rem;
+}
+
+/* SignUp Page's Styles */
+
+.signUpContainer{
+    margin-top: 6rem;
+    display: flex;
+    height: 80vh;
+    width: 100%;
+}
