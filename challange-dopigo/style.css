@@ -2,7 +2,10 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    border: 1px solid black ;
+}
+:root{
+    --blue: #0D6EFD;
+    --purple: #7952B3;
 }
 html{
     font-size: 16px;
@@ -29,7 +32,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#0D6EFD ;
+    background-color:var(--blue) ;
     border: none;
     outline: none;
     border-radius: 4px;
@@ -53,16 +56,21 @@ html{
 .signUpContainer{
     margin-top: 6rem;
     display: flex;
-    height: 90vh;
+    height: 100%;
     width: 100%;
 }
 .signUpForm{
-    margin: 0rem 3rem;
+    padding: 0rem 3rem;
 }
 .leftSection{
+    width: 50%;
     padding-top: 7rem;
     margin-right: 12rem;
-    height: 100%;
+    margin-left:3rem;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .title{
     font-size: 1.5rem;
@@ -78,7 +86,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#0D6EFD ;
+    background-color:var(--blue) ;
     border: none;
     outline: none;
     border-radius: 4px;
@@ -89,11 +97,17 @@ button{
     letter-spacing: 1px;
 }
 .signUpFormContainer{
+    width: 50%;
+    margin-right: 3rem;
+    height: 100%;
     border: 1px solid white;
     border-radius: 5px;   
     box-shadow:3px 3px 3px 3px rgb(214, 214, 214);
 }
-
+.signUp,
+.forgotPassword{
+    color: var(--blue);
+}
 /* Responsive Settings */
 
 @media screen and (max-width:1500px) {
@@ -143,7 +157,7 @@ button{
 @media screen and (max-width:450px) {
     .signInContainer{
         width: 90%;
-        height: 60%;
+        height: 45%;
     }
     html{
         font-size: 0.85rem;
@@ -152,7 +166,7 @@ button{
         margin-bottom:2rem;
     } 
     .formBottom{
-        margin-top: 10rem;
+        margin-top: 8rem;
     }
     .forgotPassword{
         display: flex;
@@ -165,17 +179,45 @@ button{
         width: 100%;
     }
 
+}
+@media screen and (max-width:350px) {
+    html{
+        font-size: 0.8rem;
+    }
+    .signInContainer{
+        width: 95%;
+        height: 55%;
+    }
+    .formBottom{
+        margin-top: 5rem;
+    }
 } 
 
 /* signUp Page Responsive */
-@media screen and (max-width:660px) {
+@media screen and (max-width:1050px) {
+    .leftSection{
+        padding-top: 5rem;
+        margin-right: 6rem;
+    }
+}
+@media screen and (max-width:596px) {
     .signUpContainer{
-        margin-top: 3rem;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height:100%
-    } 
- 
+        flex-direction: column-reverse;
+    }
+    .leftSection{
+        padding-top: 4rem;
+        width: 80%;
+        margin: auto;
+    }
+    .signUpFormContainer{
+        width: 80%;
+        margin: auto;
+    }
+    html{
+        font-size: 0.9rem;
+    }
+    .signUpForm{
+        padding: 0rem 1rem;
+    }
 }
