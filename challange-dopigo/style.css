@@ -2,11 +2,12 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    border: 1px solid black;
 }
 :root{
     --blue: #0D6EFD;
     --purple: #7952B3;
+    --gray: #6C757D;
+    --white : #fff;
 }
 html{
     font-size: 16px;
@@ -19,7 +20,7 @@ html{
     align-items: center;
 }
 .signInContainer{
-    border: 1px solid white;
+    border: 1px solid var(--white);
     border-radius: 5px;   
     box-shadow:3px 3px 3px 3px rgb(214, 214, 214);
     min-width: 400px ;
@@ -81,7 +82,7 @@ html{
     letter-spacing: 1px;
 }
 .desc{
-    color: gray;
+    color: var(--gray);
     letter-spacing: 1px;
 }
 .accountBtn{
@@ -103,7 +104,7 @@ button{
     width: 50%;
     margin-right: 3rem;
     height: 100%;
-    border: 1px solid white;
+    border: 1px solid var(--white);
     border-radius: 5px;   
     box-shadow:3px 3px 3px 3px rgb(214, 214, 214);
 }
@@ -111,7 +112,7 @@ button{
 .forgotPassword{
     color: var(--blue);
 }
-/* Responsive Settings */
+/* SignIn Page's Responsive Settings */
 
 @media screen and (max-width:600px) {
     .signInContainer{
@@ -154,7 +155,7 @@ button{
    
 }
 
-/* signUp Page Responsive */
+/* SignUp Page's Responsive Settings */
 @media screen and (max-width:1050px) {
     .leftSection{
         padding-top: 5rem;
