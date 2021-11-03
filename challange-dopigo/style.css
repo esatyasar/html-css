@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    border: 1px solid black;
 }
 :root{
     --blue: #0D6EFD;
@@ -21,12 +22,14 @@ html{
     border: 1px solid white;
     border-radius: 5px;   
     box-shadow:3px 3px 3px 3px rgb(214, 214, 214);
+    min-width: 400px ;
     width: 30%;
-    height: 50%;
+    height: 25rem;
 }
 .signInForm{
     margin: 3rem 3rem 5rem 3rem;
 }
+
 .continueBtn{
     height: 3rem;
     display: flex;
@@ -110,88 +113,46 @@ button{
 }
 /* Responsive Settings */
 
-@media screen and (max-width:1500px) {
+@media screen and (max-width:600px) {
     .signInContainer{
-        width: 35%;
-    }
-}
-@media screen and (max-width:1300px) {
-    .signInContainer{
-        width: 40%;
-    }
-}
-@media screen and (max-width:1120px) {
-    .signInContainer{
-        width: 45%;
-        height: 45%;
-    }
-    html{
-        font-size: 0.95rem;
-    }
-}
-@media screen and (max-width:920px) {
-    .signInContainer{
-        width: 50%;
-    }
-}
-@media screen and (max-width:760px) {
-    .signInContainer{
-        width: 55%;
+        min-width: 0rem;
+        width: 90%;
     }
     html{
         font-size: 0.9rem;
     }
-}
-@media screen and (max-width:576px) {
-    .signInContainer{
-        width: 70%;
-        height: 50%;
-    }
-    .signInForm{
-        margin: 2rem 0.5rem 3rem 0.5rem
-    }
     .formBottom{
-        margin-top: 8rem;
-    }
-} 
-@media screen and (max-width:450px) {
-    .signInContainer{
-        width: 90%;
-        height: 45%;
-    }
-    html{
-        font-size: 0.85rem;
-    }
-  .signInForm{
-        margin-bottom:2rem;
-    } 
-    .formBottom{
-        margin-top: 8rem;
-    }
-    .forgotPassword{
-        display: flex;
-        justify-content: flex-end;
-        font-size: 0.8rem;
+        margin-top: 6rem;
     }
     #email,
     #Password,
     .signInBtntn{
         width: 100%;
     }
-
 }
-@media screen and (max-width:350px) {
+@media screen and (max-width:450px) {
+    .signInContainer{
+        width: 95%;
+        height: 27rem;
+    }
     html{
         font-size: 0.8rem;
     }
-    .signInContainer{
-        width: 95%;
-        height: 55%;
-    }
     .formBottom{
-        margin-top: 5rem;
+        margin-top: 4rem;
     }
-} 
+    .signInForm{
+        margin: 3rem 1rem 5rem 1rem;
+    }
+   
+}
+@media screen and (max-width:450px) {
+   
+    .signInForm{
+        margin: 3rem 0.5rem 5rem 0.5rem;
+    }
+   
+}
 
 /* signUp Page Responsive */
 @media screen and (max-width:1050px) {
